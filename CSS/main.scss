@@ -202,7 +202,9 @@
           }
           @each $dayNight in Daytime, Night {
             .#{$dayNight} {
-              background: no-repeat center/cover url("image/#{$dayNight}.jpg");
+              background: no-repeat
+                center/cover
+                url("./image/#{$dayNight}.jpg");
               background-color: transparent;
               border: none;
               width: 100%;
@@ -220,7 +222,7 @@
 
             .day::after {
               content: "";
-              background: no-repeat center / cover url(../image/click.png);
+              background: no-repeat center / cover url("./image/click.png");
               display: inline-block;
               width: 48px;
               height: 33px;
@@ -252,7 +254,7 @@
             }
             .night::after {
               content: "";
-              background: no-repeat center / cover url(image/click.png);
+              background: no-repeat center / cover url("./image/click.png");
               display: inline-block;
               width: 45px;
               height: 33px;
@@ -285,7 +287,9 @@
           }
           @each $dayNight in day, night {
             .#{$dayNight} {
-              background: no-repeat center/cover url("image/#{$dayNight}.png");
+              background: no-repeat
+                center/cover
+                url("./image/#{$dayNight}.png");
               background-color: transparent;
               border: none;
               width: 60px;
@@ -552,7 +556,9 @@
               }
               @each $rooms in poolvillaImg, hotelImg {
                 .#{$rooms} {
-                  background: no-repeat center/cover url("image/#{$rooms}.jpg");
+                  background: no-repeat
+                    center/cover
+                    url("./image/#{$rooms}.jpg");
                   transition: all 1s;
                 }
               }
@@ -629,7 +635,9 @@
             }
             @each $poolBox in infinitypool, privateypool, rooftoppool {
               .#{$poolBox} {
-                background: no-repeat center/cover url("image/#{$poolBox}.jpg");
+                background: no-repeat
+                  center/cover
+                  url("./image/#{$poolBox}.jpg");
                 transition: all 1s;
               }
             }
@@ -710,7 +718,7 @@
             }
             @each $rooms in bbqImg, spaImg, petImg, cafeImg {
               .#{$rooms} {
-                background: no-repeat center/cover url("image/#{$rooms}.jpg");
+                background: no-repeat center/cover url("./image/#{$rooms}.jpg");
                 transition: all 1s;
               }
             }
@@ -777,7 +785,7 @@
         justify-content: center;
         width: 100%;
         position: relative;
-        background: url("image/0.jpg") no-repeat center / 100% 100%;
+        background: url("./image/0.jpg") no-repeat center / 100% 100%;
         &::before {
           content: "";
           display: inline-block;
