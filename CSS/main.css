@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "KORAIL";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KORAIL.woff2") format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KORAIL.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -72,7 +73,7 @@
   padding: 0;
   overflow: hidden;
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -408,7 +409,13 @@
   left: 8px;
   display: none;
 }
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .day-after-inline-block::after {
   display: inline-block;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day::before {
@@ -422,11 +429,29 @@
   right: -21px;
   font-size: 0.9rem;
 }
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .night-after-inline-block::after {
   display: inline-block;
 }
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block,
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block {
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .night-after-inline-block,
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .day-after-inline-block {
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night::after {
@@ -451,10 +476,22 @@
   right: -21px;
   font-size: 0.9rem;
 }
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .day-after-inline-block::after {
   display: inline-block;
 }
-#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox
+  .dayAndNight
+  .changeBtn
+  .night-after-inline-block::after {
   display: inline-block;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .opacity {
@@ -514,14 +551,26 @@
   color: rgba(91, 91, 91, 0.53);
   font-size: 1.2rem;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer a::before {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .specialOffer
+  a::before {
   content: "";
   display: inline-block;
   width: 30px;
   border: 1px solid rgb(198, 198, 198);
   margin: 0 8px 5px 0;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer a::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .specialOffer
+  a::after {
   content: "";
   display: inline-block;
   width: 40px;
@@ -557,31 +606,86 @@
   height: 100%;
   font-size: 0.9rem;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt a img {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  dt
+  a
+  img {
   width: 100%;
   transition: all 0.8s;
   margin: 50px 0 30px 0;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt a img:hover {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  dt
+  a
+  img:hover {
   transform: scale(1.1);
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerTitle {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  .offerTitle {
   font-size: 1.3rem;
   font-family: "Josefin Sans", sans-serif;
   margin: 20px 0;
   color: #d6a884;
   font-weight: 800;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerTitle a {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  .offerTitle
+  a {
   letter-spacing: -2px;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  .offerText {
   margin: 7px 0;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerText a {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  .offerText
+  a {
   font-size: 0.8rem;
 }
-#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .date {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.offerBoxWrap
+  .offerBox
+  .offerContent
+  dl
+  .date {
   margin-top: 30px;
 }
 #wrap main #fullpage .fullpageBox.accommodationWrap {
@@ -598,7 +702,12 @@
   justify-content: flex-end;
   align-items: center;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .accommodationBoxText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .accommodationBoxText {
   width: 350px;
   align-self: flex-start;
   margin: 0 0 30px 0;
@@ -609,36 +718,70 @@
   position: relative;
   right: 60px;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .accommodationBoxText::before {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .accommodationBoxText::before {
   content: "";
   display: inline-block;
   width: 150px;
   border: 0.5px solid rgba(214, 168, 132, 0.5960784314);
   margin: 0 10px 6px 0;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .ACCOMMODA {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA h3 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .ACCOMMODA
+  h3 {
   font-size: 3rem;
   font-family: "Prata";
   font-weight: 900;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .ACCOMMODA
+  a {
   color: rgba(91, 91, 91, 0.53);
   font-size: 1.2rem;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a::before {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .ACCOMMODA
+  a::before {
   content: "";
   display: inline-block;
   width: 30px;
   border: 1px solid rgb(198, 198, 198);
   margin: 0 8px 5px 0;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .ACCOMMODA
+  a::after {
   content: "";
   display: inline-block;
   width: 40px;
@@ -651,19 +794,39 @@
   height: 570px;
   position: relative;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div {
   width: 50%;
   overflow: hidden;
   position: relative;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .imghover {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .imghover {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .imghover::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .imghover::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -674,7 +837,14 @@
   height: 100%;
   background-color: rgba(73, 73, 73, 0.71);
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText {
   width: 600px;
   height: 250px;
   position: absolute;
@@ -686,21 +856,54 @@
   justify-content: flex-start;
   flex-direction: column;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText span {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  span {
   font-size: 1.3rem;
   display: inline-block;
   line-height: 27px;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText h4 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  h4 {
   font-size: 2.5rem;
   margin: 30px 0 40px 0;
   font-family: "Prata";
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText .poolvillaLink {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  .poolvillaLink {
   width: 360px;
   height: 50px;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText .poolvillaLink a:not(:last-child)::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  .poolvillaLink
+  a:not(:last-child)::after {
   content: "|";
   display: inline-block;
   width: 22px;
@@ -708,7 +911,15 @@
   line-height: 16px;
   font-size: 0.7rem;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText a.moerSee {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  a.moerSee {
   display: block;
   width: 180px;
   height: 50px;
@@ -722,13 +933,29 @@
   z-index: 100;
   transition: all 1s ease;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText div .moerSee.hoverBtn {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.elaText
+  div
+  .moerSee.hoverBtn {
   text-decoration: line-through;
   font-size: 1.1rem;
   letter-spacing: 5px;
   transition: all 1s ease;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .hotelImg::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .hotelImg::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -738,18 +965,45 @@
   height: 100%;
   background-color: rgba(59, 59, 59, 0.71);
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.hoverColor::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  div.hoverColor::after {
   background-color: rgba(84, 84, 84, 0.318);
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .poolvillaImg {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .poolvillaImg {
   background: no-repeat center/cover url("../image/poolvillaImg.jpg");
   transition: all 1s;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .hotelImg {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .hotelImg {
   background: no-repeat center/cover url("../image/hotelImg.jpg");
   transition: all 1s;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div.elaText {
   width: 600px;
   height: 250px;
   position: absolute;
@@ -761,24 +1015,54 @@
   justify-content: flex-start;
   flex-direction: column;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText span {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div.elaText
+  span {
   font-size: 1.3rem;
   display: inline-block;
   line-height: 27px;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText h4 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div.elaText
+  h4 {
   font-size: 2.5rem;
   margin: 30px 0 40px 0;
   font-family: "Prata";
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText .hotelLink {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div.elaText
+  .hotelLink {
   flex-direction: column;
   width: 455px;
   height: 55px;
   display: flex;
   justify-content: space-around;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText .hotelLink p a:not(:last-child)::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div.elaText
+  .hotelLink
+  p
+  a:not(:last-child)::after {
   content: "|";
   display: inline-block;
   width: 22px;
@@ -786,7 +1070,13 @@
   line-height: 16px;
   font-size: 0.7rem;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv a.moerSee {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  a.moerSee {
   display: block;
   width: 180px;
   height: 50px;
@@ -800,7 +1090,14 @@
   z-index: 100;
   transition: all 1s ease;
 }
-#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .moerSee.hoverBtn {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.accommodationWrap
+  .accommodationBox
+  .roomdiv
+  div
+  .moerSee.hoverBtn {
   text-decoration: line-through;
   font-size: 1.1rem;
   letter-spacing: 5px;
@@ -825,7 +1122,13 @@
   transition: all 1s;
   overflow: hidden;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.imghover {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  > div.imghover {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -834,7 +1137,13 @@
   z-index: -1;
   overflow: hidden;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.imghover::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  > div.imghover::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -853,7 +1162,13 @@
   background: no-repeat center/cover url("../image/rooftoppool.jpg");
   transition: all 1s;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.hoverColor::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  > div.hoverColor::after {
   background-color: rgba(84, 84, 84, 0.318);
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap h3 {
@@ -867,19 +1182,41 @@
   color: whitesmoke;
   margin: 20px 0 40px 0;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .FText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .hideWrap
+  .FText {
   width: 500px;
   overflow: hidden;
   height: 0px;
   transition: height 0.8s;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .FText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .hideWrap
+  .FText
+  p {
   color: whitesmoke;
   font-weight: 600;
   margin-bottom: 7px;
   background-color: transparent;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .moerSee {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .hideWrap
+  .moerSee {
   display: block;
   width: 180px;
   height: 50px;
@@ -891,7 +1228,14 @@
   border: 1px solid whitesmoke;
   margin: 85px 0 0 16px;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .moerSee.hoverBtn {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .hideWrap
+  .moerSee.hoverBtn {
   text-decoration: line-through;
   font-size: 1.1rem;
   letter-spacing: 5px;
@@ -901,7 +1245,14 @@
   display: flex;
   justify-content: center;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText h3 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .rotateText
+  h3 {
   font-size: 2.1rem;
   color: whitesmoke;
   font-family: "Prata";
@@ -911,37 +1262,78 @@
   width: 40px;
   height: auto;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText h3::before {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .rotateText
+  h3::before {
   content: "";
   display: inline-block;
   height: 235px;
   margin: 0 0 10px 10px;
   border: 1px solid whitesmoke;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText > p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .rotateText
+  > p {
   font-size: 1.3rem;
   color: whitesmoke;
   letter-spacing: 0px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText > p span {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .rotateText
+  > p
+  span {
   margin-bottom: 11px;
   display: inline-block;
   position: relative;
   left: 2px;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideencontent {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  > div
+  .hideencontent {
   position: absolute;
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool {
   width: 55vw;
   height: 100%;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool .hideWrap .FText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.infinityPool
+  .hideWrap
+  .FText {
   height: 50px;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool .hideencontent {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.infinityPool
+  .hideencontent {
   display: none;
   bottom: -30px;
 }
@@ -950,12 +1342,25 @@
   height: 100%;
   justify-content: flex-end;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.privateyPool .hideWrap {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.privateyPool
+  .hideWrap {
   display: none;
   position: absolute;
   top: 287px;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.privateyPool .hideWrap a {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.privateyPool
+  .hideWrap
+  a {
   left: -13px;
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool {
@@ -963,12 +1368,25 @@
   height: 100%;
   justify-content: flex-end;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool .hideWrap {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.roofTopPool
+  .hideWrap {
   display: none;
   position: absolute;
   top: 287px;
 }
-#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool .hideWrap a {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.special1Wrap
+  .specialBox
+  div.roofTopPool
+  .hideWrap
+  a {
   left: -13px;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap {
@@ -997,7 +1415,13 @@
   z-index: -1;
   overflow: hidden;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .imghover::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .imghover::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -1020,10 +1444,23 @@
   background: no-repeat center/cover url("../image/cafeImg.jpg");
   transition: all 1s;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hoverColor::after {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hoverColor::after {
   background-color: rgba(84, 84, 84, 0.318);
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div div .moerSee.hoverBtn {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  div
+  .moerSee.hoverBtn {
   text-decoration: line-through;
   font-size: 1.1rem;
   letter-spacing: 5px;
@@ -1035,30 +1472,66 @@
   padding: 0 0 0 37px;
   display: none;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap h3 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  h3 {
   font-size: 2.5rem;
   color: whitesmoke;
   font-family: "Prata";
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap > p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  > p {
   font-size: 1.3rem;
   font-weight: 600;
   color: whitesmoke;
   margin: 20px 0 40px 0;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .FText {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  .FText {
   width: 500px;
   overflow: hidden;
   height: 0px;
   transition: height 0.8s;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .FText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  .FText
+  p {
   color: whitesmoke;
   font-weight: 600;
   margin-bottom: 7px;
   background-color: transparent;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .moerSee {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  .moerSee {
   display: block;
   width: 180px;
   height: 50px;
@@ -1070,7 +1543,14 @@
   border: 1px solid whitesmoke;
   margin: 85px 0 0 16px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .moerSee {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .hideWrap
+  .moerSee {
   left: 15px;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText {
@@ -1079,7 +1559,14 @@
   justify-content: flex-start;
   padding-left: 80px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText h3 {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .rotateText
+  h3 {
   font-size: 2.1rem;
   color: whitesmoke;
   font-family: "Prata";
@@ -1089,41 +1576,98 @@
   width: 40px;
   height: auto;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText h3::before {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .rotateText
+  h3::before {
   content: "";
   display: inline-block;
   height: 235px;
   margin: 0 0 10px 10px;
   border: 1px solid whitesmoke;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText > p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .rotateText
+  > p {
   font-size: 1.3rem;
   color: whitesmoke;
   letter-spacing: 0px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText > p span {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .rotateText
+  > p
+  span {
   margin-bottom: 11px;
   display: inline-block;
   position: relative;
   left: 2px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  div
+  .rotateText
+  p {
   position: relative;
   height: 100%;
   top: 240px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .bbq .rotateText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  .bbq
+  .rotateText
+  p {
   top: 332px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .spa .rotateText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  .spa
+  .rotateText
+  p {
   top: 510px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .pet .rotateText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  .pet
+  .rotateText
+  p {
   top: 365px;
 }
-#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .cafe .rotateText p {
+#wrap
+  main
+  #fullpage
+  .fullpageBox.orderSeviceWrap
+  .orderSevice
+  .cafe
+  .rotateText
+  p {
   top: 520px;
 }
 #wrap main #fullpage .fullpageBox.aboutWrap {
