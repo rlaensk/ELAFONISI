@@ -256,21 +256,21 @@
   margin-top: 2px;
 }
 #wrap main #fullpage .mainSlideText .play {
-  background: no-repeat center/cover url("/image/play.png");
+  background: no-repeat center/cover url("./image/play.png");
   background-color: transparent;
   border: none;
   width: 60px;
   height: 60px;
 }
 #wrap main #fullpage .mainSlideText .pause {
-  background: no-repeat center/cover url("/image/pause.png");
+  background: no-repeat center/cover url("./image/pause.png");
   background-color: transparent;
   border: none;
   width: 60px;
   height: 60px;
 }
 #wrap main #fullpage .mainSlideText .nextBtn {
-  background: no-repeat center/cover url("/image/nextBtn.png");
+  background: no-repeat center/cover url("./image/nextBtn.png");
   background-color: transparent;
   border: none;
   width: 60px;
@@ -297,67 +297,67 @@
   left: 0;
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-1 {
-  background-image: url("/image/0.jpg");
+  background-image: url("./image/0.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-2 {
-  background-image: url("/image/1.jpg");
+  background-image: url("./image/1.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-3 {
-  background-image: url("/image/2.jpg");
+  background-image: url("./image/2.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-4 {
-  background-image: url("/image/3.jpg");
+  background-image: url("./image/3.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-5 {
-  background-image: url("/image/4.jpg");
+  background-image: url("./image/4.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-6 {
-  background-image: url("/image/5.jpg");
+  background-image: url("./image/5.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-7 {
-  background-image: url("/image/6.jpg");
+  background-image: url("./image/6.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-8 {
-  background-image: url("/image/7.jpg");
+  background-image: url("./image/7.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-9 {
-  background-image: url("/image/8.jpg");
+  background-image: url("./image/8.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-10 {
-  background-image: url("/image/9.jpg");
+  background-image: url("./image/9.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-11 {
-  background-image: url("/image/10.jpg");
+  background-image: url("./image/10.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-12 {
-  background-image: url("/image/11.jpg");
+  background-image: url("./image/11.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-13 {
-  background-image: url("/image/12.jpg");
+  background-image: url("./image/12.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-14 {
-  background-image: url("/image/13.jpg");
+  background-image: url("./image/13.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-15 {
-  background-image: url("/image/14.jpg");
+  background-image: url("./image/14.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-16 {
-  background-image: url("/image/15.jpg");
+  background-image: url("./image/15.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-17 {
-  background-image: url("/image/16.jpg");
+  background-image: url("./image/16.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-18 {
-  background-image: url("/image/17.jpg");
+  background-image: url("./image/17.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-19 {
-  background-image: url("/image/18.jpg");
+  background-image: url("./image/18.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-20 {
-  background-image: url("/image/19.jpg");
+  background-image: url("./image/19.jpg");
 }
 #wrap main #fullpage .slideBox.fullpageBox .slide-21 {
-  background-image: url("/image/20.jpg");
+  background-image: url("./image/20.jpg");
 }
 #wrap main #fullpage .fullpageBox {
   width: 100vw;
@@ -375,14 +375,14 @@
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .Daytime {
-  background: no-repeat center/cover url("/image/Daytime.jpg");
+  background: no-repeat center/cover url("./image/Daytime.jpg");
   background-color: transparent;
   border: none;
   width: 100%;
   height: 100vh;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .Night {
-  background: no-repeat center/cover url("/image/Night.jpg");
+  background: no-repeat center/cover url("./image/Night.jpg");
   background-color: transparent;
   border: none;
   width: 100%;
@@ -399,7 +399,7 @@
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day::after {
   content: "";
-  background: no-repeat center/cover url(/image/click.png);
+  background: no-repeat center/cover url(./image/click.png);
   display: inline-block;
   width: 48px;
   height: 33px;
@@ -431,7 +431,7 @@
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night::after {
   content: "";
-  background: no-repeat center/cover url(/image/click.png);
+  background: no-repeat center/cover url(./image/click.png);
   display: inline-block;
   width: 45px;
   height: 33px;
@@ -462,7 +462,7 @@
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .day {
-  background: no-repeat center/cover url("/image/day.png");
+  background: no-repeat center/cover url("./image/day.png");
   background-color: transparent;
   border: none;
   width: 60px;
@@ -471,7 +471,7 @@
   position: relative;
 }
 #wrap main #fullpage .fullpageBox .dayAndNight .night {
-  background: no-repeat center/cover url("/image/night.png");
+  background: no-repeat center/cover url("./image/night.png");
   background-color: transparent;
   border: none;
   width: 60px;
@@ -842,15 +842,15 @@
   background-color: rgba(0, 0, 0, 0.527);
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .infinitypool {
-  background: no-repeat center/cover url("/image/infinitypool.jpg");
+  background: no-repeat center/cover url("./image/infinitypool.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .privateypool {
-  background: no-repeat center/cover url("/image/privateypool.jpg");
+  background: no-repeat center/cover url("./image/privateypool.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rooftoppool {
-  background: no-repeat center/cover url("/image/rooftoppool.jpg");
+  background: no-repeat center/cover url("./image/rooftoppool.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.hoverColor::after {
@@ -1005,19 +1005,19 @@
   background-color: rgba(0, 0, 0, 0.527);
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .bbqImg {
-  background: no-repeat center/cover url("/image/bbqImg.jpg");
+  background: no-repeat center/cover url("./image/bbqImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .spaImg {
-  background: no-repeat center/cover url("/image/spaImg.jpg");
+  background: no-repeat center/cover url("./image/spaImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .petImg {
-  background: no-repeat center/cover url("/image/petImg.jpg");
+  background: no-repeat center/cover url("./image/petImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .cafeImg {
-  background: no-repeat center/cover url("/image/cafeImg.jpg");
+  background: no-repeat center/cover url("./image/cafeImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hoverColor::after {
@@ -1131,7 +1131,7 @@
   justify-content: center;
   width: 100%;
   position: relative;
-  background: url("/image/0.jpg") no-repeat center/100% 100%;
+  background: url("./image/0.jpg") no-repeat center/100% 100%;
 }
 #wrap main #fullpage .fullpageBox.aboutWrap::before {
   content: "";
