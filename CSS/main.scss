@@ -152,7 +152,7 @@
         }
         @each $butn in play, pause, nextBtn {
           .#{$butn} {
-            background: no-repeat center/cover url("./image/#{$butn}.png");
+            background: no-repeat center/cover url("../image/#{$butn}.png");
             background-color: transparent;
             border: none;
             width: 60px;
@@ -182,7 +182,7 @@
         }
         @for $i from 0 through 20 {
           .slide-#{$i + 1} {
-            background-image: url("./image/#{$i}.jpg");
+            background-image: url("../image/#{$i}.jpg");
           }
         }
       }
@@ -204,7 +204,7 @@
             .#{$dayNight} {
               background: no-repeat
                 center/cover
-                url("./image/#{$dayNight}.jpg");
+                url("../image/#{$dayNight}.jpg");
               background-color: transparent;
               border: none;
               width: 100%;
@@ -222,7 +222,7 @@
 
             .day::after {
               content: "";
-              background: no-repeat center / cover url(./image/click.png);
+              background: no-repeat center / cover url(../image/click.png);
               display: inline-block;
               width: 48px;
               height: 33px;
@@ -254,7 +254,7 @@
             }
             .night::after {
               content: "";
-              background: no-repeat center / cover url(./image/click.png);
+              background: no-repeat center / cover url(../image/click.png);
               display: inline-block;
               width: 45px;
               height: 33px;
@@ -289,7 +289,7 @@
             .#{$dayNight} {
               background: no-repeat
                 center/cover
-                url("./image/#{$dayNight}.png");
+                url("../image/#{$dayNight}.png");
               background-color: transparent;
               border: none;
               width: 60px;
@@ -558,7 +558,7 @@
                 .#{$rooms} {
                   background: no-repeat
                     center/cover
-                    url("/image/#{$rooms}.jpg");
+                    url("../image/#{$rooms}.jpg");
                   transition: all 1s;
                 }
               }
@@ -637,7 +637,7 @@
               .#{$poolBox} {
                 background: no-repeat
                   center/cover
-                  url("./image/#{$poolBox}.jpg");
+                  url("../image/#{$poolBox}.jpg");
                 transition: all 1s;
               }
             }
@@ -718,7 +718,9 @@
             }
             @each $rooms in bbqImg, spaImg, petImg, cafeImg {
               .#{$rooms} {
-                background: no-repeat center/cover url("./image/#{$rooms}.jpg");
+                background: no-repeat
+                  center/cover
+                  url("../image/#{$rooms}.jpg");
                 transition: all 1s;
               }
             }
@@ -785,7 +787,7 @@
         justify-content: center;
         width: 100%;
         position: relative;
-        background: url("./image/0.jpg") no-repeat center / 100% 100%;
+        background: url("../image/0.jpg") no-repeat center / 100% 100%;
         &::before {
           content: "";
           display: inline-block;
