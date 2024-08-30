@@ -1,0 +1,1224 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "KORAIL";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KORAIL.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+#wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#wrap main {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+#wrap main #fullpage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#wrap main #fullpage .fullPageNav {
+  width: 510px;
+  height: 100vh;
+  right: -418px;
+  display: flex;
+  position: fixed;
+  border-left: 1px solid white;
+  z-index: 5;
+  transition: transform 3s ease; /* 부드럽게 이동 */
+  transform: translateY(0); /* 기본 위치: 아래로 이동된 상태 */
+}
+#wrap main #fullpage .fullPageNav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  padding-top: 138px;
+}
+#wrap main #fullpage .fullPageNav ul li {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  position: relative;
+  right: 12px;
+}
+#wrap main #fullpage .fullPageNav ul li:first-child a {
+  background-color: white;
+}
+#wrap main #fullpage .fullPageNav ul li a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  margin-left: 1px;
+  border: 1px solid white;
+}
+#wrap main #fullpage .fullPageNav ul li a span {
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+}
+#wrap main #fullpage .fullPageNav ul li .fp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav1:before {
+  content: "Main";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav1.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav1.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav2:before {
+  content: "DAY OR NIGHT";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav2.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav2.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav3:before {
+  content: "OFFERS";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav3.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav3.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav4:before {
+  content: "ACCOMMODATION";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav4.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav4.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav5:before {
+  content: "SPECIAL 01";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav5.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav5.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav6:before {
+  content: "SPECIAL 02";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav6.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav6.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav7:before {
+  content: "ABOUT US";
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: -165px;
+  text-align: right;
+  width: 150px;
+  height: 30px;
+  visibility: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav7.active::before {
+  visibility: visible;
+  opacity: 1;
+}
+#wrap main #fullpage .fullPageNav ul .fullNav7.activeColor::before {
+  color: lightgrey;
+}
+#wrap main #fullpage .mainSlideText {
+  width: auto;
+  position: absolute;
+  z-index: 101;
+  color: white;
+  top: 411px;
+  left: 120px;
+}
+#wrap main #fullpage .mainSlideText .firstText {
+  font-size: 1.8rem;
+}
+#wrap main #fullpage .mainSlideText .secondText {
+  font-size: 4rem;
+  font-family: "Prata";
+  margin: 25px 0;
+}
+#wrap main #fullpage .mainSlideText p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+#wrap main #fullpage .mainSlideText .videoPlayControl {
+  width: 175px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#wrap main #fullpage .mainSlideText .videoPlayControl button.nextBtn {
+  width: 54px;
+  height: 50px;
+  margin-top: 2px;
+}
+#wrap main #fullpage .mainSlideText .play {
+  background: no-repeat center/cover url("/image/play.png");
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+}
+#wrap main #fullpage .mainSlideText .pause {
+  background: no-repeat center/cover url("/image/pause.png");
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+}
+#wrap main #fullpage .mainSlideText .nextBtn {
+  background: no-repeat center/cover url("/image/nextBtn.png");
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+}
+#wrap main #fullpage .slideBox.fullpageBox {
+  display: flex;
+  width: 2118%;
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide .bg {
+  min-width: 100%;
+  min-height: 118vh;
+  position: absolute;
+  top: -168px;
+  left: 0;
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-1 {
+  background-image: url("/image/0.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-2 {
+  background-image: url("/image/1.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-3 {
+  background-image: url("/image/2.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-4 {
+  background-image: url("/image/3.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-5 {
+  background-image: url("/image/4.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-6 {
+  background-image: url("/image/5.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-7 {
+  background-image: url("/image/6.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-8 {
+  background-image: url("/image/7.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-9 {
+  background-image: url("/image/8.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-10 {
+  background-image: url("/image/9.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-11 {
+  background-image: url("/image/10.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-12 {
+  background-image: url("/image/11.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-13 {
+  background-image: url("/image/12.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-14 {
+  background-image: url("/image/13.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-15 {
+  background-image: url("/image/14.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-16 {
+  background-image: url("/image/15.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-17 {
+  background-image: url("/image/16.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-18 {
+  background-image: url("/image/17.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-19 {
+  background-image: url("/image/18.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-20 {
+  background-image: url("/image/19.jpg");
+}
+#wrap main #fullpage .slideBox.fullpageBox .slide-21 {
+  background-image: url("/image/20.jpg");
+}
+#wrap main #fullpage .fullpageBox {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s ease-in-out;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight #imgBox {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .Daytime {
+  background: no-repeat center/cover url("/image/Daytime.jpg");
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100vh;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .Night {
+  background: no-repeat center/cover url("/image/Night.jpg");
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100vh;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn {
+  width: 100vw;
+  height: 167px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day::after {
+  content: "";
+  background: no-repeat center/cover url(/image/click.png);
+  display: inline-block;
+  width: 48px;
+  height: 33px;
+  position: absolute;
+  bottom: 79px;
+  left: 8px;
+  display: none;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block::after {
+  display: inline-block;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day::before {
+  content: "DAY VIEW";
+  font-family: "Prata";
+  position: absolute;
+  top: 72px;
+  display: inline-block;
+  width: 100px;
+  color: white;
+  right: -21px;
+  font-size: 0.9rem;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block::after {
+  display: inline-block;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block,
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block {
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night::after {
+  content: "";
+  background: no-repeat center/cover url(/image/click.png);
+  display: inline-block;
+  width: 45px;
+  height: 33px;
+  position: absolute;
+  bottom: 79px;
+  left: 8px;
+  display: none;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night::before {
+  content: "NIGHT VIEW";
+  font-family: "Prata";
+  position: absolute;
+  top: 72px;
+  display: inline-block;
+  width: 100px;
+  color: white;
+  right: -21px;
+  font-size: 0.9rem;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .day-after-inline-block::after {
+  display: inline-block;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .night-after-inline-block::after {
+  display: inline-block;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .changeBtn .opacity {
+  opacity: 0.3;
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .day {
+  background: no-repeat center/cover url("/image/day.png");
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 40px;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox .dayAndNight .night {
+  background: no-repeat center/cover url("/image/night.png");
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 40px;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox {
+  width: 1350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerImg {
+  width: 350px;
+  align-self: flex-start;
+  margin: 50px 0;
+  position: relative;
+  right: 60px;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer h3 {
+  font-size: 3rem;
+  font-family: "Prata";
+  font-weight: 900;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer a {
+  color: rgba(91, 91, 91, 0.53);
+  font-size: 1.2rem;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer a::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  border: 1px solid rgb(198, 198, 198);
+  margin: 0 8px 5px 0;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .specialOffer a::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  border: 1px solid rgb(198, 198, 198);
+  margin: 0 0 5px 8px;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent {
+  display: flex;
+  width: 1345px;
+  justify-content: space-around;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl {
+  width: 450px;
+  padding: 25px;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dd {
+  width: 100%;
+  font-size: 0.9rem;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dd a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt a img {
+  width: 100%;
+  transition: all 0.8s;
+  margin: 50px 0 30px 0;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl dt a img:hover {
+  transform: scale(1.1);
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerTitle {
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 20px 0;
+  color: #d6a884;
+  font-weight: 800;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerTitle a {
+  letter-spacing: -2px;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerText {
+  margin: 7px 0;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .offerText a {
+  font-size: 0.8rem;
+}
+#wrap main #fullpage .fullpageBox.offerBoxWrap .offerBox .offerContent dl .date {
+  margin-top: 30px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox {
+  width: 1350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .accommodationBoxText {
+  width: 350px;
+  align-self: flex-start;
+  margin: 0 0 30px 0;
+  color: #d6a884;
+  display: inline-block;
+  width: 800px;
+  font-size: 1.1rem;
+  position: relative;
+  right: 60px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .accommodationBoxText::before {
+  content: "";
+  display: inline-block;
+  width: 150px;
+  border: 0.5px solid rgba(214, 168, 132, 0.5960784314);
+  margin: 0 10px 6px 0;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA h3 {
+  font-size: 3rem;
+  font-family: "Prata";
+  font-weight: 900;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a {
+  color: rgba(91, 91, 91, 0.53);
+  font-size: 1.2rem;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  border: 1px solid rgb(198, 198, 198);
+  margin: 0 8px 5px 0;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .ACCOMMODA a::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  border: 1px solid rgb(198, 198, 198);
+  margin: 0 0 5px 8px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv {
+  width: 100vw;
+  display: flex;
+  height: 570px;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .imghover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .imghover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 73, 73, 0.71);
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText {
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  color: whitesmoke;
+  display: flex;
+  margin: 75px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText span {
+  font-size: 1.3rem;
+  display: inline-block;
+  line-height: 27px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText h4 {
+  font-size: 2.5rem;
+  margin: 30px 0 40px 0;
+  font-family: "Prata";
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText .poolvillaLink {
+  width: 360px;
+  height: 50px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText .poolvillaLink a:not(:last-child)::after {
+  content: "|";
+  display: inline-block;
+  width: 22px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 0.7rem;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText a.moerSee {
+  display: block;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  bottom: 115px;
+  left: 82px;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  z-index: 100;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.elaText div .moerSee.hoverBtn {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .hotelImg::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 59, 59, 0.71);
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div div.hoverColor::after {
+  background-color: rgba(84, 84, 84, 0.318);
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .poolvillaImg {
+  background: no-repeat center/cover url("/image/poolvillaImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .hotelImg {
+  background: no-repeat center/cover url("/image/hotelImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText {
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  color: whitesmoke;
+  display: flex;
+  margin: 75px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText span {
+  font-size: 1.3rem;
+  display: inline-block;
+  line-height: 27px;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText h4 {
+  font-size: 2.5rem;
+  margin: 30px 0 40px 0;
+  font-family: "Prata";
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText .hotelLink {
+  flex-direction: column;
+  width: 455px;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText .hotelLink p a:not(:last-child)::after {
+  content: "|";
+  display: inline-block;
+  width: 22px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 0.7rem;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv a.moerSee {
+  display: block;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  bottom: 115px;
+  left: 82px;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  z-index: 100;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .moerSee.hoverBtn {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap {
+  overflow: hidden;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  justify-content: flex-start;
+  padding: 300px 0 0 95px;
+  transition: all 1s;
+  overflow: hidden;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.imghover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.imghover::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .infinitypool {
+  background: no-repeat center/cover url("/image/infinitypool.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .privateypool {
+  background: no-repeat center/cover url("/image/privateypool.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rooftoppool {
+  background: no-repeat center/cover url("/image/rooftoppool.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div > div.hoverColor::after {
+  background-color: rgba(84, 84, 84, 0.318);
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap h3 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  font-family: "Prata";
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 20px 0 40px 0;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .FText {
+  width: 500px;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.8s;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .FText p {
+  color: whitesmoke;
+  font-weight: 600;
+  margin-bottom: 7px;
+  background-color: transparent;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .moerSee {
+  display: block;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 82px;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  margin: 85px 0 0 16px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideWrap .moerSee.hoverBtn {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText {
+  display: flex;
+  justify-content: center;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText h3 {
+  font-size: 2.1rem;
+  color: whitesmoke;
+  font-family: "Prata";
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  width: 40px;
+  height: auto;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText h3::before {
+  content: "";
+  display: inline-block;
+  height: 235px;
+  margin: 0 0 10px 10px;
+  border: 1px solid whitesmoke;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText > p {
+  font-size: 1.3rem;
+  color: whitesmoke;
+  letter-spacing: 0px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .rotateText > p span {
+  margin-bottom: 11px;
+  display: inline-block;
+  position: relative;
+  left: 2px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox > div .hideencontent {
+  position: absolute;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool {
+  width: 55vw;
+  height: 100%;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool .hideWrap .FText {
+  height: 50px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.infinityPool .hideencontent {
+  display: none;
+  bottom: -30px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.privateyPool {
+  width: 22.5vw;
+  height: 100%;
+  justify-content: flex-end;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.privateyPool .hideWrap {
+  display: none;
+  position: absolute;
+  top: 287px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.privateyPool .hideWrap a {
+  left: -13px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool {
+  width: 22.5vw;
+  height: 100%;
+  justify-content: flex-end;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool .hideWrap {
+  display: none;
+  position: absolute;
+  top: 287px;
+}
+#wrap main #fullpage .fullpageBox.special1Wrap .specialBox div.roofTopPool .hideWrap a {
+  left: -13px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div {
+  height: 100%;
+  width: 480px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .imghover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .imghover::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .bbqImg {
+  background: no-repeat center/cover url("/image/bbqImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .spaImg {
+  background: no-repeat center/cover url("/image/spaImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .petImg {
+  background: no-repeat center/cover url("/image/petImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .cafeImg {
+  background: no-repeat center/cover url("/image/cafeImg.jpg");
+  transition: all 1s;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hoverColor::after {
+  background-color: rgba(84, 84, 84, 0.318);
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div div .moerSee.hoverBtn {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap {
+  position: absolute;
+  top: 350px;
+  padding: 0 0 0 37px;
+  display: none;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap h3 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  font-family: "Prata";
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 20px 0 40px 0;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .FText {
+  width: 500px;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.8s;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .FText p {
+  color: whitesmoke;
+  font-weight: 600;
+  margin-bottom: 7px;
+  background-color: transparent;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .moerSee {
+  display: block;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 82px;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  margin: 85px 0 0 16px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .hideWrap .moerSee {
+  left: 15px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText h3 {
+  font-size: 2.1rem;
+  color: whitesmoke;
+  font-family: "Prata";
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  width: 40px;
+  height: auto;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText h3::before {
+  content: "";
+  display: inline-block;
+  height: 235px;
+  margin: 0 0 10px 10px;
+  border: 1px solid whitesmoke;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText > p {
+  font-size: 1.3rem;
+  color: whitesmoke;
+  letter-spacing: 0px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText > p span {
+  margin-bottom: 11px;
+  display: inline-block;
+  position: relative;
+  left: 2px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice div .rotateText p {
+  position: relative;
+  height: 100%;
+  top: 240px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .bbq .rotateText p {
+  top: 332px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .spa .rotateText p {
+  top: 510px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .pet .rotateText p {
+  top: 365px;
+}
+#wrap main #fullpage .fullpageBox.orderSeviceWrap .orderSevice .cafe .rotateText p {
+  top: 520px;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background: url("/image/0.jpg") no-repeat center/100% 100%;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.481);
+}
+#wrap main #fullpage .fullpageBox.aboutWrap div {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  top: 35px;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText h3 {
+  font-size: 3rem;
+  font-family: "Prata";
+  margin: 30px 0;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText p {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText span {
+  display: inline-block;
+  margin: 10px 0;
+  opacity: 0.6;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText span:nth-of-type(1) {
+  font-size: 1.3rem;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText a.moerSee {
+  display: block;
+  width: 200px;
+  height: 50px;
+  bottom: 0;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  margin-top: 30px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutText .moerSee.hoverBtn {
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  transition: all 1s ease;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutVideo {
+  display: flex;
+  align-items: center;
+}
+#wrap main #fullpage .fullpageBox.aboutWrap .aboutVideo video {
+  width: 560px;
+}
+#wrap main #fullpage aside {
+  width: 100vw;
+  height: 50px;
+  position: absolute;
+  z-index: 100;
+  top: 858px;
+}
+#wrap main #fullpage aside ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#wrap main #fullpage aside ul li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  transform: rotate(45deg);
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2196078431);
+}
+#wrap main #fullpage aside ul li.active {
+  background-color: white;
+}

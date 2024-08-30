@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^1.7.3",
+    "fullpage.js": "^4.0.26",
+    "sass": "^1.77.8",
+    "swiper": "^11.1.10"
+  }
+}

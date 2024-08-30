@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/* 모든 스크롤바 */
+::-webkit-scrollbar {
+  width: 10px; /* 스크롤바 너비 */
+  height: 10px; /* 가로 스크롤바의 높이 */
+}
+
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background: rgb(78, 151, 233);
+}
+
+/* 스크롤바 핸들 호버 시 */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(15, 68, 128);
+}
+
+#wrap {
+  height: auto;
+  overflow: hidden;
+}
+#wrap header {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 110;
+}
+#wrap header > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+#wrap header > div h1 {
+  width: 110px;
+  height: 80px;
+  position: relative;
+  left: 70px;
+}
+#wrap header > div h1 a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#wrap header > div #btn_box {
+  width: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+#wrap header > div #btn_box img {
+  width: 30px;
+  height: 30px;
+}
+#wrap header > div #btn_box .sns {
+  width: 86px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#wrap header > div #btn_box .reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 30px;
+  margin: 13px;
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+#wrap header > div #btn_box .hambergerMenu {
+  width: 92px;
+  height: 100%;
+  padding: 3px 0px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+#wrap header > div #btn_box .hambergerMenu span {
+  width: 35px;
+  height: 1px;
+  background-color: white;
+  transition: all 1s;
+}
+#wrap header > div #btn_box .hambergerMenu .scrollHam {
+  width: 55px;
+  height: 1px;
+}
+#wrap header > div #btn_box .hambergerMenu .twoLineText {
+  background-color: transparent;
+  display: none;
+}
+#wrap header > div #btn_box .hambergerMenu .twoLine {
+  width: 15px;
+  position: absolute;
+  right: 32px;
+}
+#wrap header > div #btn_box .hambergerMenu .activeOneLine {
+  width: 52px;
+  transition: all 0.5s;
+}
+#wrap header > div #btn_box .hambergerMenu .activeTwoLine {
+  width: 10px;
+  right: 26px;
+  transition: all 0.5s;
+}
+#wrap header > div #btn_box .hambergerMenu .activeTwoLineText {
+  display: inline-block;
+  position: absolute;
+  top: 37px;
+  left: 15px;
+  font-size: 0.8rem;
+  color: white;
+}
+#wrap header > div #btn_box .hambergerMenu .activeThreeLine {
+  width: 52px;
+  transition: all 0.5s;
+}
+#wrap header nav {
+  width: 100%;
+  height: 91vh;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  transform: translateY(-111%);
+  transition: all 0.8s;
+  opacity: 0;
+}
+#wrap header nav div {
+  width: 50%;
+}
+#wrap header nav .nav_imgBox {
+  height: 110.1%;
+  background: url("/image/nav_img.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -84px;
+}
+#wrap header nav .nav_kind > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 120px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list {
+  width: 720px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "prata";
+  font-size: 1.9rem;
+  line-height: 75px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .nav_text {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_about::after {
+  content: "엘라포니시";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_accommeodation::after {
+  content: "객실";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_special::after {
+  content: "스페셜";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_offers::after {
+  content: "스페셜 오퍼";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_community::after {
+  content: "커뮤니티";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_reservation::after {
+  content: "실시간 예약";
+  display: inline-block;
+  position: absolute;
+  left: 184px;
+  bottom: 16px;
+  text-align: right;
+  width: auto;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 33px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .nav_hiddenMeun {
+  display: flex;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.8s;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .nav_hiddenMeun > li {
+  width: 100%;
+  font-size: 1.2rem;
+  align-self: center;
+  font-family: inter;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .nav_hiddenMeun > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  transition: height 0.5s;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .nav_hiddenMeun > li > ul > li {
+  width: 225px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list .active {
+  height: auto;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_about::after {
+  top: 25px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_accommeodation {
+  width: 315px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_accommeodation::after {
+  left: 325px;
+  top: 25px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_special::after {
+  left: 158px;
+  top: 25px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_community::after {
+  left: 227px;
+  top: 25px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_offers::after {
+  left: 150px;
+  top: 25px;
+}
+#wrap header nav .nav_kind > ul > li.nav_list span.nav_reservation::after {
+  left: 250px;
+  top: 25px;
+}
+#wrap header nav .nav_kind .nav_copyrights {
+  width: 100%;
+  height: 30px;
+  border-top: 0.7px solid rgba(195, 195, 195, 0.5176470588);
+  position: relative;
+  bottom: 32px;
+}
+#wrap header nav .nav_kind .nav_copyrights p {
+  text-align: right;
+  font-size: 0.7rem;
+  padding-right: 30px;
+  line-height: 28px;
+}
+#wrap header #kakaoRv {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 30px;
+  right: 130px;
+  z-index: 100;
+  opacity: 1;
+  transform: translate(225px);
+  transition: all 1s;
+}
+#wrap footer {
+  height: 425px;
+  background-color: #131d28;
+}
+#wrap footer .footInfoBox {
+  display: flex;
+  justify-content: center;
+}
+#wrap footer .footInfoBox > div {
+  width: 35%;
+}
+#wrap footer .footInfoBox .footInfo .logobox {
+  width: 135px;
+  height: 100px;
+  margin: 30px 0;
+  background: url(/image/logo_on.png) no-repeat center/cover;
+}
+#wrap footer .footInfoBox .footInfo ul li {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+#wrap footer .footInfoBox .footInstar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 115px;
+}
+#wrap footer .footInfoBox .footInstar h3 {
+  color: white;
+  margin: 50px 0 20px 0;
+}
+#wrap footer .footInfoBox .footInstar h3 img {
+  vertical-align: sub;
+  width: 20px;
+}
+#wrap footer .footInfoBox .footInstar .instarImgBox .instarFeedBox {
+  display: flex;
+  gap: 10px;
+}
+#wrap footer .footInfoBox .footInstar .instarImgBox .instarFeedBox:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+#wrap footer .footInfoBox .footInstar .instarImgBox .instarFeedBox a img {
+  width: 100px;
+}
+#wrap footer .footInfoBox .footInstar .instarImgBox p {
+  color: #ffffff;
+  margin: 20px 0;
+}
+#wrap footer .copyright {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.3490196078);
+}
+#wrap footer .copyright div {
+  width: 35%;
+}
+#wrap footer .copyright div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrap footer .copyright .copyrightBox p {
+  font-size: 0.8rem;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.3215686275);
+}
+#wrap footer .copyright .sns {
+  display: flex;
+  justify-content: center;
+}
+#wrap footer .copyright .sns ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#wrap footer .copyright .sns ul li a {
+  display: inline-block;
+}
+#wrap footer .copyright .sns ul li .kakaoIcon {
+  background: no-repeat center/cover url("/image/kakaoIcon.png");
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+#wrap footer .copyright .sns ul li .instarIcon {
+  background: no-repeat center/cover url("/image/instarIcon.png");
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+#wrap footer .copyright .sns ul li .faceBookIcon {
+  background: no-repeat center/cover url("/image/faceBookIcon.png");
+  border: none;
+  width: 35px;
+  height: 35px;
+}/*# sourceMappingURL=common.css.map */

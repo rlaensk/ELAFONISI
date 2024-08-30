@@ -1,0 +1,25 @@
+[
+  {
+    "id": 0,
+    "image": "./image/offer01.jpg",
+    "title": "엘라포니시\"bubble party\"",
+    "content1": "올 여름 엘라포니시와 핫하자!",
+    "content2": "루프탑에서 즐기는 수영장 버블파티!",
+    "date": "2022-06-13"
+  },
+  {
+    "id": 1,
+    "image": "./image/offer02.jpg",
+    "title": "엘라포니시 픽업서비스",
+    "content1": "뚜벅이들을 위한 픽업서비스!",
+    "content2": "차 없이도 편안한 여행되세요!",
+    "date": "2022-06-13"
+  },
+  {
+    "id": 3,
+    "image": "./image/offer03.jpg",
+    "title": "ROOM + BREAKFAST PKG",
+    "content1": "여러분들의 아침을 든든하게 채워드리는 객실+조식2인 패키지!",
+    "date": "2022-06-13"
+  }
+]

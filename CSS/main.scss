@@ -1,0 +1,876 @@
+@font-face {
+  font-family: "KORAIL";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KORAIL.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "mixins";
+
+#wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  main {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+    #fullpage {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      .fullPageNav {
+        width: 510px;
+        height: 100vh;
+        right: -418px;
+        display: flex;
+        position: fixed;
+        border-left: 1px solid white;
+        z-index: 5;
+        transition: transform 3s ease; /* 부드럽게 이동 */
+        transform: translateY(0); /* 기본 위치: 아래로 이동된 상태 */
+        ul {
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          z-index: 10;
+          padding-top: 138px;
+          li {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            position: relative;
+            right: 12px;
+            &:first-child a {
+              background-color: white;
+            }
+            a {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              transform: rotate(45deg);
+              margin-left: 1px;
+              border: 1px solid white;
+
+              span {
+                width: 20px;
+                display: inline-block;
+                height: 20px;
+              }
+            }
+            .fp-sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              overflow: hidden;
+              clip-path: inset(50%);
+              white-space: nowrap;
+              border: 0;
+            }
+          }
+
+          @each $class,
+            $text
+              in (
+                ".fullNav1" "Main",
+                ".fullNav2" "DAY OR NIGHT",
+                ".fullNav3" "OFFERS",
+                ".fullNav4" "ACCOMMODATION",
+                ".fullNav5" "SPECIAL 01",
+                ".fullNav6" "SPECIAL 02",
+                ".fullNav7" "ABOUT US"
+              )
+          {
+            #{$class} {
+              &:before {
+                content: "#{$text}";
+                display: inline-block;
+                color: white;
+                position: absolute;
+                left: -165px;
+                text-align: right;
+                width: 150px;
+                height: 30px;
+                visibility: hidden;
+                cursor: pointer;
+                opacity: 0; // 투명도 0으로 숨김
+                transition: visibility 0.3s, opacity 0.3s ease; // 애니메이션 효과
+                // // 첫 번째 요소만 텍스트 표시
+                // @if $class != ".fullNav1" {
+                //   visibility: hidden; // 또는 display: none;
+                // }
+              }
+              &.active::before {
+                visibility: visible;
+                opacity: 1; // 가시화
+              }
+              &.activeColor::before {
+                color: lightgrey;
+              }
+            }
+          }
+        }
+      }
+      .mainSlideText {
+        width: auto;
+        position: absolute;
+        z-index: 101;
+        color: white;
+        top: 411px;
+        left: 120px;
+        .firstText {
+          font-size: 1.8rem;
+        }
+        .secondText {
+          font-size: 4rem;
+          font-family: "Prata";
+          margin: 25px 0;
+        }
+        p {
+          font-size: 1rem;
+          margin-top: 10px;
+        }
+        .videoPlayControl {
+          width: 175px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          button.nextBtn {
+            width: 54px;
+            height: 50px;
+            margin-top: 2px;
+          }
+        }
+        @each $butn in play, pause, nextBtn {
+          .#{$butn} {
+            background: no-repeat center/cover url("/image/#{$butn}.png");
+            background-color: transparent;
+            border: none;
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .slideBox.fullpageBox {
+        display: flex;
+        width: 2118%;
+
+        .slide {
+          width: 100vw; // slide 너비 설정
+          height: 100%; // slide 높이 설정
+          display: flex; // 중앙 정렬이나 레이아웃 조정용
+          align-items: center; // 중앙 정렬
+          justify-content: center; // 중앙 정렬
+          background-size: cover; // 배경 이미지가 있을 경우
+          position: relative;
+          .bg {
+            min-width: 100%;
+            min-height: 118vh;
+            position: absolute;
+            top: -168px;
+            left: 0;
+          }
+        }
+        @for $i from 0 through 20 {
+          .slide-#{$i + 1} {
+            background-image: url("/image/#{$i}.jpg");
+          }
+        }
+      }
+      .fullpageBox {
+        width: 100vw;
+        height: 100vh;
+
+        transition: all 2s ease-in-out;
+        .dayAndNight {
+          width: 100vw;
+          height: 100vh;
+          position: relative;
+          #imgBox {
+            width: 100vw;
+            height: 100vh;
+            transition: all 1s;
+          }
+          @each $dayNight in Daytime, Night {
+            .#{$dayNight} {
+              background: no-repeat center/cover url("/image/#{$dayNight}.jpg");
+              background-color: transparent;
+              border: none;
+              width: 100%;
+              height: 100vh;
+            }
+          }
+          .changeBtn {
+            width: 100vw;
+            height: 167px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: self-start;
+
+            .day::after {
+              content: "";
+              background: no-repeat center / cover url(/image/click.png);
+              display: inline-block;
+              width: 48px;
+              height: 33px;
+              position: absolute;
+              bottom: 79px;
+              left: 8px;
+              display: none;
+            }
+            .day-after-inline-block::after {
+              display: inline-block;
+            }
+            .day::before {
+              content: "DAY VIEW";
+              font-family: "Prata";
+              position: absolute;
+              top: 72px;
+              display: inline-block;
+              width: 100px;
+              color: white;
+              right: -21px;
+              font-size: 0.9rem;
+            }
+            .night-after-inline-block::after {
+              display: inline-block;
+            }
+            .night-after-inline-block,
+            .day-after-inline-block {
+              transition: all 1s;
+            }
+            .night::after {
+              content: "";
+              background: no-repeat center / cover url(/image/click.png);
+              display: inline-block;
+              width: 45px;
+              height: 33px;
+              position: absolute;
+              bottom: 79px;
+              left: 8px;
+              display: none;
+            }
+            .night::before {
+              content: "NIGHT VIEW";
+              font-family: "Prata";
+              position: absolute;
+              top: 72px;
+              display: inline-block;
+              width: 100px;
+              color: white;
+              right: -21px;
+              font-size: 0.9rem;
+            }
+            .day-after-inline-block::after {
+              display: inline-block;
+            }
+            .night-after-inline-block::after {
+              display: inline-block;
+            }
+            .opacity {
+              opacity: 0.3;
+              transition: all 1s;
+            }
+          }
+          @each $dayNight in day, night {
+            .#{$dayNight} {
+              background: no-repeat center/cover url("/image/#{$dayNight}.png");
+              background-color: transparent;
+              border: none;
+              width: 60px;
+              height: 60px;
+              margin: 0 40px;
+              position: relative;
+            }
+          }
+        }
+      }
+      .fullpageBox.offerBoxWrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        .offerBox {
+          width: 1350px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .offerImg {
+            width: 350px;
+            align-self: flex-start;
+            margin: 50px 0;
+            position: relative;
+            right: 60px;
+          }
+          .specialOffer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            h3 {
+              font-size: 3rem;
+              font-family: "Prata";
+              font-weight: 900;
+            }
+            a {
+              color: rgb(91 91 91 / 53%);
+              font-size: 1.2rem;
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 30px;
+                border: 1px solid rgb(198, 198, 198);
+                margin: 0 8px 5px 0;
+              }
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                border: 1px solid rgb(198, 198, 198);
+                margin: 0 0 5px 8px;
+              }
+            }
+          }
+          .offerContent {
+            display: flex;
+
+            width: 1345px;
+            justify-content: space-around;
+            dl {
+              width: 450px;
+              padding: 25px;
+              dd {
+                width: 100%;
+                font-size: 0.9rem;
+                a {
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              dt {
+                width: 100%;
+                font-family: "Josefin Sans", sans-serif;
+                overflow: hidden;
+                a {
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                  font-size: 0.9rem;
+                  img {
+                    width: 100%;
+                    transition: all 0.8s;
+                    margin: 50px 0 30px 0;
+                    &:hover {
+                      transform: scale(1.1);
+                    }
+                  }
+                }
+              }
+              .offerTitle {
+                font-size: 1.3rem;
+                font-family: "Josefin Sans", sans-serif;
+                margin: 20px 0;
+                color: #d6a884;
+                font-weight: 800;
+                a {
+                  letter-spacing: -2px;
+                }
+              }
+              .offerText {
+                margin: 7px 0;
+
+                a {
+                  font-size: 0.8rem;
+                }
+              }
+              .date {
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+      .fullpageBox.accommodationWrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        .accommodationBox {
+          width: 1350px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+
+          .accommodationBoxText {
+            width: 350px;
+            align-self: flex-start;
+            margin: 0 0 30px 0;
+            color: #d6a884;
+            display: inline-block;
+            width: 800px;
+            font-size: 1.1rem;
+            position: relative;
+            right: 60px;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 150px;
+              border: 0.5px solid #d6a88498;
+              margin: 0 10px 6px 0;
+            }
+          }
+          .ACCOMMODA {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 75px;
+            h3 {
+              font-size: 3rem;
+              font-family: "Prata";
+              font-weight: 900;
+            }
+            a {
+              color: rgb(91 91 91 / 53%);
+              font-size: 1.2rem;
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 30px;
+                border: 1px solid rgb(198, 198, 198);
+                margin: 0 8px 5px 0;
+              }
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                border: 1px solid rgb(198, 198, 198);
+                margin: 0 0 5px 8px;
+              }
+            }
+          }
+          .roomdiv {
+            width: 100vw;
+            display: flex;
+            height: 570px;
+            position: relative;
+            div {
+              width: 50%;
+              overflow: hidden;
+              position: relative;
+              .imghover {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                &::after {
+                  content: "";
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: inherit;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgb(73 73 73 / 71%);
+                }
+              }
+              div.elaText {
+                width: 600px;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                z-index: 100;
+                color: whitesmoke;
+                display: flex;
+                margin: 75px;
+                justify-content: flex-start;
+                flex-direction: column;
+                span {
+                  font-size: 1.3rem;
+                  display: inline-block;
+                  line-height: 27px;
+                }
+                h4 {
+                  font-size: 2.5rem;
+                  margin: 30px 0 40px 0;
+                  font-family: "Prata";
+                }
+                .poolvillaLink {
+                  width: 360px;
+                  height: 50px;
+                  a {
+                    &:not(:last-child)::after {
+                      content: "|";
+                      display: inline-block;
+                      width: 22px;
+                      text-align: center;
+                      line-height: 16px;
+                      font-size: 0.7rem;
+                    }
+                  }
+                }
+                a.moerSee {
+                  @include moreSeeBtn;
+                }
+                div .moerSee.hoverBtn {
+                  @include btnHover;
+                }
+              }
+
+              .hotelImg {
+                &::after {
+                  content: "";
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(59, 59, 59, 0.71);
+                }
+              }
+              div.hoverColor {
+                @include hoverColor;
+              }
+              @each $rooms in poolvillaImg, hotelImg {
+                .#{$rooms} {
+                  background: no-repeat
+                    center/cover
+                    url("/image/#{$rooms}.jpg");
+                  transition: all 1s;
+                }
+              }
+            }
+            div.elaText {
+              width: 600px;
+              height: 250px;
+              position: absolute;
+              top: 0;
+              z-index: 100;
+              color: whitesmoke;
+              display: flex;
+              margin: 75px;
+
+              justify-content: flex-start;
+              flex-direction: column;
+              span {
+                font-size: 1.3rem;
+                display: inline-block;
+                line-height: 27px;
+              }
+              h4 {
+                font-size: 2.5rem;
+                margin: 30px 0 40px 0;
+                font-family: "Prata";
+              }
+              .hotelLink {
+                flex-direction: column;
+                width: 455px;
+                height: 55px;
+                display: flex;
+                justify-content: space-around;
+                p {
+                  a {
+                    &:not(:last-child)::after {
+                      content: "|";
+                      display: inline-block;
+                      width: 22px;
+                      text-align: center;
+                      line-height: 16px;
+                      font-size: 0.7rem;
+                    }
+                  }
+                }
+              }
+            }
+            a.moerSee {
+              @include moreSeeBtn;
+            }
+            div .moerSee.hoverBtn {
+              @include btnHover;
+            }
+          }
+        }
+      }
+      .fullpageBox.special1Wrap {
+        overflow: hidden;
+        .specialBox {
+          width: 100vw;
+          height: 100%;
+          position: relative;
+          display: flex;
+          > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            justify-content: flex-start;
+            padding: 300px 0 0 95px;
+            transition: all 1s;
+            overflow: hidden;
+            > div.imghover {
+              @include imghover;
+            }
+            @each $poolBox in infinitypool, privateypool, rooftoppool {
+              .#{$poolBox} {
+                background: no-repeat
+                  center/cover
+                  url("/image/#{$poolBox}.jpg");
+                transition: all 1s;
+              }
+            }
+            > div.hoverColor {
+              @include hoverColor;
+            }
+            .hideWrap {
+              @include hideWrap;
+              .moerSee.hoverBtn {
+                @include btnHover;
+              }
+            }
+            .rotateText {
+              @include rotateText;
+            }
+            .hideencontent {
+              position: absolute;
+            }
+          }
+          div.infinityPool {
+            width: 55vw;
+            height: 100%;
+            .hideWrap {
+              .FText {
+                height: 50px;
+              }
+            }
+            .hideencontent {
+              display: none;
+              bottom: -30px;
+            }
+          }
+          div.privateyPool {
+            width: 22.5vw;
+            height: 100%;
+            justify-content: flex-end;
+            .hideWrap {
+              display: none;
+              position: absolute;
+              top: 287px;
+              a {
+                left: -13px;
+              }
+            }
+          }
+          div.roofTopPool {
+            width: 22.5vw;
+            height: 100%;
+            justify-content: flex-end;
+            .hideWrap {
+              display: none;
+              position: absolute;
+              top: 287px;
+              a {
+                left: -13px;
+              }
+            }
+          }
+        }
+      }
+      .fullpageBox.orderSeviceWrap {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        .orderSevice {
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          div {
+            height: 100%;
+            width: 480px;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            .imghover {
+              @include imghover;
+            }
+            @each $rooms in bbqImg, spaImg, petImg, cafeImg {
+              .#{$rooms} {
+                background: no-repeat center/cover url("/image/#{$rooms}.jpg");
+                transition: all 1s;
+              }
+            }
+            .hoverColor {
+              @include hoverColor;
+            }
+            div .moerSee.hoverBtn {
+              @include btnHover;
+            }
+            .hideWrap {
+              position: absolute;
+              top: 350px;
+              padding: 0 0 0 37px;
+              display: none;
+              @include hideWrap;
+              .moerSee {
+                left: 15px;
+              }
+            }
+            .rotateText {
+              @include rotateText;
+              justify-content: flex-start;
+              padding-left: 80px;
+              p {
+                position: relative;
+                height: 100%;
+                top: 240px;
+              }
+            }
+          }
+
+          .bbq {
+            .rotateText {
+              p {
+                top: 332px;
+              }
+            }
+          }
+          .spa {
+            .rotateText {
+              p {
+                top: 510px;
+              }
+            }
+          }
+          .pet {
+            .rotateText {
+              p {
+                top: 365px;
+              }
+            }
+          }
+          .cafe {
+            .rotateText {
+              p {
+                top: 520px;
+              }
+            }
+          }
+        }
+      }
+      .fullpageBox.aboutWrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        background: url("/image/0.jpg") no-repeat center / 100% 100%;
+        &::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.481);
+        }
+        div {
+          width: 40%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: white;
+          position: relative;
+          z-index: 2;
+          top: 35px;
+        }
+        .aboutText {
+          h3 {
+            font-size: 3rem;
+            font-family: "Prata";
+            margin: 30px 0;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 20px;
+            font-weight: 600;
+            margin: 20px 0;
+          }
+          span {
+            display: inline-block;
+            margin: 10px 0;
+            opacity: 0.6;
+            font-family: "Josefin Sans", sans-serif;
+            &:nth-of-type(1) {
+              font-size: 1.3rem;
+            }
+          }
+          a.moerSee {
+            display: block;
+            width: 200px;
+            height: 50px;
+            bottom: 0;
+            color: whitesmoke;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid whitesmoke;
+            margin-top: 30px;
+            transition: all 1s ease;
+          }
+          .moerSee.hoverBtn {
+            @include btnHover;
+          }
+        }
+        .aboutVideo {
+          display: flex;
+          align-items: center;
+          video {
+            width: 560px;
+          }
+        }
+      }
+      aside {
+        width: 100vw;
+        height: 50px;
+        position: absolute;
+        z-index: 100;
+        top: 858px;
+        ul {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          li {
+            width: 10px;
+            height: 10px;
+            border: 1px solid white;
+            transform: rotate(45deg);
+            margin: 0 5px;
+            cursor: pointer;
+            background-color: #ffffff38;
+          }
+          li.active {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}

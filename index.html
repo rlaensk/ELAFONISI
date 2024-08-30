@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="pa/favicon(3).ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/common.css" />
+
+    <title>ELAFONISI</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div>
+          <h1 id="logo" aria-label="logo">
+            <a href="/index.html">
+              <img src="./image/logo_on.png" alt="ELAFONISI" />
+            </a>
+          </h1>
+          <div id="btn_box">
+            <div class="sns">
+              <a
+                href="https://pf.kakao.com/_sMASb"
+                target="_blank"
+                class="kakaoIcon"
+                ><img src="./image/kakao_white.png" alt="kakaoPage"
+              /></a>
+              <a
+                href="https://www.instagram.com/elafonisi_gyeongju/"
+                target="_blank"
+                class="instarIcon"
+                ><img
+                  src="./image/instargram_white.png"
+                  loading="lazy"
+                  alt="instagram"
+              /></a>
+            </div>
+            <div class="reservation">
+              <img
+                src="./image/hrv_btn_white.png"
+                loading="lazy"
+                class="hrv_btn"
+                alt="serviceBtn"
+              />
+            </div>
+            <div class="hambergerMenu">
+              <span class="oneLine"></span>
+              <span class="twoLineText">MENU</span>
+              <span class="twoLine"></span>
+              <span class="threeLine"></span>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="elaponish_nav">
+          <div class="nav_imgBox">
+            <img src="./image/nav_logo.png" alt="elaponish_nav_logo" />
+          </div>
+          <div class="nav_kind">
+            <ul>
+              <li class="nav_list">
+                <span class="nav_text nav_about"> ABOUT US </span>
+                <ul class="nav_hiddenMeun">
+                  <li><a href="">EXTEROIR</a></li>
+                  <li><a href="">LOCATION</a></li>
+                  <li><a href="">TRAVEL</a></li>
+                </ul>
+              </li>
+              <li class="nav_list">
+                <span class="nav_text nav_accommeodation">ACCOMMODATION</span>
+                <ul class="nav_hiddenMeun">
+                  <li>
+                    <a href="">객실 미리보기</a>
+                    <ul>
+                      <li><a href="">POOL&amp;SPAVILLA</a></li>
+                      <li><a href="">SPAVILLA</a></li>
+                      <li><a href="">POOLVILLA</a></li>
+                      <li><a href="">ROYAL SUITE</a></li>
+                      <li><a href="">SUITE</a></li>
+                      <li><a href="">DELUX TWIN SPA</a></li>
+                      <li><a href="">DELUX TWIN</a></li>
+                      <li><a href="">DELUX DOBLE SPA</a></li>
+                      <li><a href="">DELUX DOUBLE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav_list">
+                <span class="nav_text nav_special">SPECIAL</span>
+                <ul class="nav_hiddenMeun">
+                  <li>
+                    <a href="">스페셜 미리보기</a>
+                    <ul>
+                      <li><a href="">INFINITY POOL</a></li>
+                      <li><a href="">PRIVATE POOL</a></li>
+                      <li><a href="">ROOFTOP POOL</a></li>
+                      <li><a href="">BREAKFAST &amp; BBQ</a></li>
+                      <li><a href="">SPA</a></li>
+                      <li><a href="">PETS ALLOWED</a></li>
+                      <li><a href="">CAFE</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav_list">
+                <span class="nav_text nav_offers">OFFERS</span>
+                <ul class="nav_hiddenMeun">
+                  <li><a href="">SPECIAL OFFER</a></li>
+                </ul>
+              </li>
+              <li class="nav_list">
+                <span class="nav_text nav_community">COMMUNITY</span>
+                <ul class="nav_hiddenMeun">
+                  <li><a href="">NOTICE</a></li>
+                  <li><a href="">REVIEW</a></li>
+                </ul>
+              </li>
+              <li class="nav_list">
+                <span class="nav_text nav_reservation"> RESERVATION</span>
+                <ul class="nav_hiddenMeun">
+                  <li><a href="">RESERVATION</a></li>
+                  <li><a href="">GUIDE</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav_copyrights nav_list">
+              <p>Copyrights 2024 &copy; All Rights Reserved</p>
+            </div>
+          </div>
+        </nav>
+        <div id="kakaoRv">
+          <img src="./image/kakao_rv.png" alt="카카오로 예약하기" />
+        </div>
+      </header>
+
+      <main>
+        <div id="fullpage" class="slide">
+          <div class="fullPageNav">
+            <ul>
+              <li class="fullNav1 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div1</span>
+                </a>
+              </li>
+              <li class="fullNav2 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div2</span>
+                </a>
+              </li>
+              <li class="fullNav3 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div3</span>
+                </a>
+              </li>
+              <li class="fullNav4 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div4</span>
+                </a>
+              </li>
+              <li class="fullNav5 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div5</span>
+                </a>
+              </li>
+              <li class="fullNav6 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div6</span>
+                </a>
+              </li>
+              <li class="fullNav7 fullNav">
+                <a href="" class="fullNavAlink">
+                  <span></span>
+                  <span class="fp-sr-only">div7</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mainSlideText">
+            <p class="firstText">엘라포니시 풀빌라 호텔</p>
+            <h1 class="secondText">Elafonisi Poolvilla Hotel</h1>
+            <p class="ThirdText">
+              동해의 푸른바다를 한눈에 담을 수 있는 오션뷰
+            </p>
+            <p class="fourthText">
+              프라이빗하고 편안한 휴식을 즐길 수 있는 최고의 공간
+            </p>
+            <div class="videoPlayControl">
+              <button id="playPauseBtn" class="pause"></button>
+              <button class="nextBtn"></button>
+            </div>
+          </div>
+          <div class="slideBox fullpageBox">
+            <div class="slide-0 slide">
+              <video
+                src="./image/elaponish.mp4"
+                class="bg"
+                autoplay
+                muted
+              ></video>
+            </div>
+            <div class="slide-1 slide"></div>
+            <div class="slide-2 slide"></div>
+            <div class="slide-3 slide"></div>
+            <div class="slide-4 slide"></div>
+            <div class="slide-5 slide"></div>
+            <div class="slide-6 slide"></div>
+            <div class="slide-7 slide"></div>
+            <div class="slide-8 slide"></div>
+            <div class="slide-9 slide"></div>
+            <div class="slide-10 slide"></div>
+            <div class="slide-11 slide"></div>
+            <div class="slide-12 slide"></div>
+            <div class="slide-13 slide"></div>
+            <div class="slide-14 slide"></div>
+            <div class="slide-15 slide"></div>
+            <div class="slide-16 slide"></div>
+            <div class="slide-17 slide"></div>
+            <div class="slide-18 slide"></div>
+            <div class="slide-19 slide"></div>
+            <div class="slide-20 slide"></div>
+          </div>
+          <aside>
+            <ul>
+              <li class="slideBtn active"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+              <li class="slideBtn"></li>
+            </ul>
+          </aside>
+
+          <div class="fullpageBox">
+            <div class="dayAndNight">
+              <div id="imgBox" class="Daytime"></div>
+              <div class="changeBtn">
+                <button class="day day-after-inline-block"></button>
+                <button class="night opacity"></button>
+              </div>
+            </div>
+          </div>
+          <div class="fullpageBox offerBoxWrap">
+            <div class="offerBox">
+              <img
+                class="offerImg"
+                src="./image/offerSubject.png"
+                alt="offer"
+                loading="lazy"
+              />
+              <div class="specialOffer">
+                <h3>SPECIAL OFFERS</h3>
+                <a href="./">ALL VIEW</a>
+              </div>
+              <div class="offerContent"></div>
+            </div>
+          </div>
+          <div class="fullpageBox accommodationWrap">
+            <div class="accommodationBox">
+              <span class="accommodationBoxText"
+                >동해의 탁 트인 바다를 바라볼 수 있는 엘라포니시의 객실을
+                만나보세요.</span
+              >
+              <div class="ACCOMMODA">
+                <h3>ACCOMMODATION</h3>
+                <a href="/" target="_blank">ALL VIEW</a>
+              </div>
+              <div class="roomdiv">
+                <div class="poolvilla">
+                  <div class="poolvillaImgHover poolvillaImg imghover"></div>
+                  <div class="poolvillaText elaText">
+                    <span>풀빌라동</span>
+                    <h4>POOL VILLA</h4>
+                    <div class="poolvillaLink">
+                      <a href="/" target="_blank">POOL &amp; SPAVILLA</a>
+                      <a href="/" target="_blank">SPAVILLA</a>
+                      <a href="/" target="_blank">POOLVILLA</a>
+                    </div>
+                  </div>
+
+                  <a class="moerSee" href="/sub.html">VIEW MORE</a>
+                </div>
+                <div class="hotel">
+                  <div class="hotelImgHover hotelImg imghover"></div>
+                  <div class="hotelText elaText">
+                    <span>호텔동</span>
+                    <h4>HOTEL</h4>
+                    <div class="hotelLink">
+                      <p>
+                        <a href="/" target="_blank">ROYAL SUITE</a>
+                        <a href="/" target="_blank">SUITE</a>
+                        <a href="/" target="_blank">DELUX TWIN SPA</a>
+                      </p>
+                      <p>
+                        <a href="/" target="_blank">DELUX TWIN</a>
+                        <a href="/" target="_blank">DELUX DOUBLE SPA</a>
+                        <a href="/" target="_blank">DELUXDOUBLE</a>
+                      </p>
+                    </div>
+                  </div>
+                  <a class="moerSee" href="/">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fullpageBox special1Wrap">
+            <div class="specialBox">
+              <div class="infinityPool">
+                <div
+                  class="infinityImghover infinitypool imghover imghoverBg"
+                ></div>
+                <div class="hideWrap">
+                  <h3>1F INFINITY POOL</h3>
+                  <p>#01 1F 인피니티풀</p>
+                  <div class="FText">
+                    <p>하늘과 바다와 수영장이 이어진 엘라포니시</p>
+                    <p>인피니티풀에서 자연과 여유로움을 즐겨보세요.</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>1F INFINITY POOL</h3>
+                  <p><span>#01</span>1F 인피니티풀</p>
+                </div>
+              </div>
+              <div class="privateyPool">
+                <div class="privateImgehover privateypool imghover"></div>
+                <div class="hideWrap">
+                  <h3>PRIVATEY POOL</h3>
+                  <p>#02 배결 수영장</p>
+                  <div class="FText">
+                    <p>경주의 파도소리와 함께 나만의 공간에서</p>
+                    <p>프라이빗한 물놀이를 즐겨보세요.</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>PRIVATEY POOL</h3>
+                  <p><span>#02</span>개별 수영장</p>
+                </div>
+              </div>
+              <div class="roofTopPool">
+                <div class="rooftopImgHover rooftoppool imghover"></div>
+                <div class="hideWrap">
+                  <h3>ROOFTOP POOL</h3>
+                  <p>#03 루프탑 풀&amp;라운지</p>
+                  <div class="FText">
+                    <p>탁 트인 전망에 마음마저 평화로워지는</p>
+                    <p>오션뷰 루프탑 라우지에서 푸른 바다를 경험해보세요.</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>ROOFTOP POOL</h3>
+                  <p><span>#03</span>루프탑 풀 &amp; 라운지</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fullpageBox orderSeviceWrap">
+            <div class="orderSevice">
+              <div class="bbq">
+                <div class="otherSeviceImgHover bbqImg imghover"></div>
+                <div class="hideWrap">
+                  <h3>BREAKEAST &amp; BBQ</h3>
+                  <p>#04 오션뷰 뷔페 조식&amp;바베큐</p>
+                  <div class="FText">
+                    <p>경주 최고의 조리장이 요리한 조식으로</p>
+                    <p>하루의 첫 식사를 맞이하세요</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>BREAKFAST&amp;BBQ</h3>
+                  <p><span>#04</span>오션뷰 뷔페 조식&amp;바베큐</p>
+                </div>
+              </div>
+              <div class="spa">
+                <div class="otherSeviceImgHover spaImg imghover"></div>
+                <div class="hideWrap">
+                  <h3>SPA</h3>
+                  <p>#05 개별스파</p>
+                  <div class="FText">
+                    <p>동해의 푸른바다를 바라보며 몸의 피로를 풀어주는</p>
+                    <p>스파를 즐기실 수 있습니다.</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>SPA</h3>
+                  <p><span>#05</span>개별스파</p>
+                </div>
+              </div>
+              <div class="pet">
+                <div class="otherSeviceImgHover petImg imghover"></div>
+                <div class="hideWrap">
+                  <h3>PETS ALLOWED</h3>
+                  <p>#06 애견 동반 입실 가능</p>
+                  <div class="FText">
+                    <p>바쁜 일상 속 반려견과</p>
+                    <p>힐링의 시간을 보내세요.</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>PETS ALLOWED</h3>
+                  <p><span>#06</span>애견 동반 입실 가능</p>
+                </div>
+              </div>
+              <div class="cafe">
+                <div class="otherSeviceImgHover cafeImg imghover"></div>
+                <div class="hideWrap">
+                  <h3>CAFE</h3>
+                  <p>#07 카페</p>
+                  <div class="FText">
+                    <p>경주 엘라포니시 핫플</p>
+                    <p>브런치 맛집!</p>
+                  </div>
+                  <a href="/" class="moerSee">VIEW MORE</a>
+                </div>
+                <div class="rotateText hideencontent">
+                  <h3>CAFE</h3>
+                  <p><span>#07</span>카페</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fullpageBox aboutWrap">
+            <div class="aboutText">
+              <h3>About</h3>
+              <p>
+                짙푸른 바다와 낭만적인 경주에서 누리는 '엘라포니시 호텔 &amp;
+                리조트'
+              </p>
+              <p>
+                세련된 이미지를 바탕으로 더욱 품격있는 서비스와 편안한 공간을,
+                <br />한 분 한 분의 가치를 추구하는 만족도 높은 엘라포니시가
+                되겠습니다.
+              </p>
+              <span
+                >Enjoy the deep blue sea and romantic racing 'Elafonisi Hotel
+                &amp; Resort'</span
+              >
+              <span
+                >Based on a refined image, more elegant service and comfortable
+                space.<br />We will become an Elafonisi with high satisfaction
+                that pursues the value of each and every one.</span
+              >
+              <a href="/" class="moerSee">RESERVATION</a>
+            </div>
+            <div class="aboutVideo">
+              <video src="./image/aboutvieeo.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footInfoBox">
+          <div class="footInfo">
+            <div class="logobox"></div>
+            <ul>
+              <li>업체명 : 엘라포니시 | 대표자 : 김종필</li>
+              <li>주소 : 경상북도 경주시 감포입 동해안로 1596</li>
+              <li>대표문의 : 054-741-5000</li>
+              <li>풀빌라문의 : 010-8767-4255</li>
+              <li>호텔문의 : 010-2402-4255</li>
+              <li>
+                은행 : 대구은행 504-20-789551-2 (예금주 : 엘라포니시
+                풀빌라&amp;호텔)
+              </li>
+            </ul>
+          </div>
+          <div class="footInstar">
+            <h3>
+              <img src="./image/instargram_white.png" alt="instargram" />
+              INSTARGRAM
+            </h3>
+            <div class="instarImgBox">
+              <div class="instarFeedBox">
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in1.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in2.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in3.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in4.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in5.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+              </div>
+              <div class="instarFeedBox">
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in6.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in7.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in8.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in9.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  target="_blank"
+                >
+                  <img
+                    src="./image/in10.jpg"
+                    loading="lazy"
+                    alt="instarConten"
+                  />
+                </a>
+              </div>
+              <p>@elafonisi_gyeongju</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="copyrightBox">
+            <p>DESIGN BY COCO</p>
+            <p>COPYRIGHT &copy; 2024 BY ELAFINISI ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="sns">
+            <ul>
+              <li class="kakao">
+                <a
+                  href="https://pf.kakao.com/_sMASb"
+                  class="kakaoIcon"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="instar">
+                <a
+                  href="https://www.instagram.com/elafonisi_gyeongju/"
+                  class="instarIcon"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="faceBookIcon">
+                <a href="/" class="faceBookIcon"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/data.json"></script>
+  </body>
+</html>

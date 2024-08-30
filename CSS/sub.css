@@ -1,0 +1,570 @@
+@charset "UTF-8";
+#wrap {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+#wrap #container {
+  width: 100vw;
+  height: auto;
+  background-color: #ffffff;
+}
+#wrap #container .top {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url(../image/sub_spavillaMain.jpg) no-repeat center center;
+  background-attachment: fixed; /* 배경을 고정시킴 */
+}
+#wrap #container .top::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 97, 97, 0.23);
+}
+#wrap #container .top h2 {
+  display: inline-block;
+  height: 90px;
+  font-size: 3.3rem;
+  font-family: "Prata";
+  color: #ffffff;
+  position: absolute;
+  left: 100px;
+  margin-top: 95px;
+  transform: translateX(-145%);
+  transition: all 1s;
+}
+#wrap #container .top h2::after {
+  content: "스파빌라";
+  display: flex;
+  position: relative;
+  top: 23px;
+  font-size: 1.2rem;
+}
+#wrap #container .top h2.sliding {
+  transform: translateX(0);
+}
+#wrap #container .roomIntroduction {
+  width: 100%;
+  height: 112vh;
+  background-color: #ffffff;
+}
+#wrap #container .roomIntroduction .roomName {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+}
+#wrap #container .roomIntroduction .roomName h3 {
+  font-size: 2.5rem;
+  font-family: "Prata";
+  font-weight: bold;
+}
+#wrap #container .roomIntroduction .roomName span {
+  padding-top: 15px;
+  color: darkgray;
+  font-size: 1.2rem;
+}
+#wrap #container .roomIntroduction .roomImg {
+  width: 100%;
+  height: 76%;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden ul.roomImg_ul {
+  width: 1599%;
+  height: 85vh;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-5.8%);
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden li {
+  width: 98vw;
+  height: 100%;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room1 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room1.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room2 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room2.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room3 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room3.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room4 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room4.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room5 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room5.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room6 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room6.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room7 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room7.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room8 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room8.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room9 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room9.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room10 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room10.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room11 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room11.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room12 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room12.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room13 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room13.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .roomHidden .room14 {
+  width: 100vw;
+  height: 100%;
+  background: url("/image/room14.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .roomIntroduction .roomImg .imgArrow {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
+}
+#wrap #container .roomIntroduction .roomImg .imgArrow span {
+  position: absolute;
+}
+#wrap #container .roomIntroduction .roomImg .imgArrow .nextArrow {
+  background: url(../image/nextArrow.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+  right: -128px;
+}
+#wrap #container .roomIntroduction .roomImg .imgArrow .prevArrow {
+  background: url(../image/prevArrow.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+  left: 66px;
+}
+#wrap #container .roomIntroduction .roomImg .roomImgnavigation {
+  width: 100vw;
+  height: 30px;
+  position: absolute;
+  bottom: 60px;
+}
+#wrap #container .roomIntroduction .roomImg .roomImgnavigation ul.roomNav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #container .roomIntroduction .roomImg .roomImgnavigation ul.roomNav li {
+  width: 10px;
+  height: 10px;
+  transform: rotate(44deg);
+  background-color: #cfcfcf;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#wrap #container .roomIntroduction .roomImg .roomImgnavigation ul.roomNav li.active {
+  background-color: whitesmoke;
+}
+#wrap #container .roomInfo {
+  width: 1160px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  flex-direction: column;
+}
+#wrap #container .roomInfo .infoTop h2 {
+  font-size: 2rem;
+  height: 95px;
+  border-bottom: 1.3px solid #000000;
+  line-height: 130px;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap #container .roomInfo .infos {
+  display: grid;
+  grid-template-areas: "roomInfo1 roomInfo2" "roomInfo3 roomInfo4";
+}
+#wrap #container .roomInfo .infos > div {
+  width: 50%;
+  height: 200px;
+  padding: 45px 0 0 20px;
+}
+#wrap #container .roomInfo .infos > div > h4 {
+  width: 300px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap #container .roomInfo .infos .info1 p::after {
+  content: "[침대룸1+거실+화장실2]";
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+#wrap #container .equipment {
+  width: 1160px;
+  height: auto;
+  margin: 0 auto;
+}
+#wrap #container .equipment .eqTop h2 {
+  font-size: 1.8rem;
+  height: 95px;
+  line-height: 130px;
+  margin: 0 0 30px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap #container .equipment .eqTab {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  position: relative;
+}
+#wrap #container .equipment .eqTab li {
+  width: 275px;
+  height: 60px;
+  border: 1px solid rgba(207, 207, 207, 0.8392156863);
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  color: rgba(207, 207, 207, 0.8392156863);
+  cursor: pointer;
+}
+#wrap #container .equipment .eqTab li > div {
+  position: absolute;
+  width: 1160px;
+  height: 200px;
+  background-color: transparent;
+  left: 0;
+  border-bottom: 1px solid rgba(207, 207, 207, 0.8392156863);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 13px 0 7px 80px;
+  visibility: hidden;
+}
+#wrap #container .equipment .eqTab li > div span {
+  font-size: 0.9rem;
+  color: #090909;
+  height: 35px;
+  text-align: left;
+  letter-spacing: 1px;
+  display: inline-block;
+  line-height: 34px;
+}
+#wrap #container .equipment .eqTab li > div span::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #d6a884;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+#wrap #container .equipment .eqTab li > div span.additionlist:last-child {
+  margin-left: 30px;
+}
+#wrap #container .equipment .eqTab li .divactive {
+  visibility: visible;
+  z-index: 300;
+}
+#wrap #container .equipment .eqTab li.active {
+  color: #ffffff;
+  background-color: #d6a884;
+}
+#wrap #container .equipment .btnBox {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#wrap #container .equipment .btnBox > div {
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+#wrap #container .equipment .btnBox .phonNum {
+  border: 1px solid #cfcfcf;
+  color: #c3c2c2;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap #container .equipment .btnBox .reservationBtn {
+  background-color: #d6a884;
+  color: #ffffff;
+  overflow: hidden;
+}
+#wrap #container .equipment .btnBox .reservationBtn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  transition: all 0.8s;
+  font-family: "Josefin Sans", sans-serif;
+}
+#wrap #container .equipment .btnBox .reservationBtn a.hover {
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  border: 1px solid #d6a884;
+  color: #d6a884;
+  background-color: #ffffff;
+}
+#wrap #container .accommodationList {
+  width: 100%;
+  height: auto;
+  margin: 9% 0 8% 9.5%;
+}
+#wrap #container .accommodationList .accommodationTop {
+  width: 100%;
+  height: 95px;
+}
+#wrap #container .accommodationList .accommodationTop h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  font-family: "prata";
+}
+#wrap #container .accommodationList .accommodationTop span {
+  color: rgb(132, 132, 132);
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+#wrap #container .accommodationList .accommodationBox {
+  width: 100%;
+  height: auto;
+  margin: 50px 0 0 18px;
+  overflow: hidden;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul {
+  height: 330px;
+  display: flex;
+  gap: 14px;
+  transition: all 0.8s;
+  flex-wrap: nowrap;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li {
+  width: 560px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a div {
+  width: 100%;
+  height: 100%;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist1 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist1.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist2 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist2.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist3 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist3.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist4 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist4.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist5 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist5.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist6 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist6.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist7 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist7.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist8 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist8.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a .roomlist9 {
+  width: 100%;
+  height: 100%;
+  background: url("/image/roomlist9.jpg") no-repeat center center;
+  background-size: cover;
+}
+#wrap #container .accommodationList .accommodationBox > .roomList_ul li a h4 {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin-left: 30px;
+  letter-spacing: -2px;
+}
+#wrap #container .accommodationList .accommodationBox .roomlistbar {
+  width: 1712px;
+  height: 4px;
+  margin: 5% 0 0 0;
+}
+#wrap #container .accommodationList .accommodationBox .roomlistbar > ul {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+#wrap #container .accommodationList .accommodationBox .roomlistbar > ul li.page {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#wrap #container .accommodationList .accommodationBox .roomlistbar > ul li.page.active {
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
