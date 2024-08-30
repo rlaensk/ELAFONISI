@@ -742,11 +742,11 @@
   background-color: rgba(84, 84, 84, 0.318);
 }
 #wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .poolvillaImg {
-  background: no-repeat center/cover url("./image/poolvillaImg.jpg");
+  background: no-repeat center/cover url("../image/poolvillaImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div .hotelImg {
-  background: no-repeat center/cover url("./image/hotelImg.jpg");
+  background: no-repeat center/cover url("../image/hotelImg.jpg");
   transition: all 1s;
 }
 #wrap main #fullpage .fullpageBox.accommodationWrap .accommodationBox .roomdiv div.elaText {

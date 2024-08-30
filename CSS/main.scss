@@ -558,7 +558,7 @@
                 .#{$rooms} {
                   background: no-repeat
                     center/cover
-                    url("./image/#{$rooms}.jpg");
+                    url("../image/#{$rooms}.jpg");
                   transition: all 1s;
                 }
               }
