@@ -2,6 +2,7 @@
 window.addEventListener("load", () => {
   window.scrollTo(0, 0);
 });
+let $fullpageNav = document.querySelector(".fullPageNav");
 document.addEventListener("DOMContentLoaded", () => {
   const $contentBox = document.querySelectorAll(".fullpageBox");
   const $fullpageBtn = document.querySelectorAll(".fullNav .fullNavAlink");
@@ -120,27 +121,28 @@ document.addEventListener("DOMContentLoaded", () => {
     $reservation.style.borderLeft = "1px solid white";
   };
 
+  //hanberger클릭시 nav Open,헤더 변경
   let hambergerCount = 0; // 초기화
   let scrollPosition = 0; // 스크롤 위치 초기화
   let isMenuOpen = false; // 메뉴가 열렸는지 여부 플래그
 
-  window.addEventListener("scroll", () => {
-    //메뉴가 열려있으면 헤더 상태 변경 안함
-    if (isMenuOpen) return;
-
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    if (scrollPosition > 100) {
-      headerchangeAfter();
-    } else {
-      headerchangeRemove();
-    }
-  });
-
-  //hanberger클릭시 nav Open,헤더 변경
-
+  let hambercerMenuOpen = () => {
+    $nav.style.transform = "translateY(0)";
+    $hamtwoText.innerHTML = "CLOSE";
+    $nav.style.opacity = 1;
+    $headerDiv.style.marginLeft = "0px";
+    //메뉴 열리면 Nav 사라지기
+    $fullpageNav.style.display = "none";
+  };
   $hambergerMenu.addEventListener("click", function () {
     if (hambergerCount === 0) {
+      hambergerCount++;
+    } else {
+      hambergerCount--;
+    }
+    if (hambergerCount != 0) {
       // 스크롤 위치 저장
+
       scrollPosition = window.scrollY;
       console.log("Scroll Position Saved:", scrollPosition);
 
@@ -155,20 +157,18 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.position = "fixed";
       document.body.style.top = `-${scrollPosition}px`;
       document.body.style.width = "100%";
-      hambergerCount++;
+
       isMenuOpen = true; // 메뉴 열림 상태 플래그 설정
 
       // 메뉴 열기
-      $nav.style.transform = "translateY(0)";
-      $hamtwoText.innerHTML = "CLOSE";
-      $nav.style.opacity = 1;
-      $headerDiv.style.marginLeft = "0px";
-      //메뉴 열리면 Nav 사라지기
-      $fullpageNav.style.display = "none";
-
+      hambercerMenuOpen();
+      $kakaoRv.style.transform = "translateX(0)";
       // 헤더 상태 변경
       if (currentIndex >= 0) {
         headerchangeAfter();
+        if (currentIndex != 0) {
+          $kakaoRv.style.transform = "translateX(0)";
+        }
       }
     } else {
       // 스크롤 잠금 해제
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
       $hamtwoText.innerHTML = "MENU";
       $nav.style.opacity = 0;
       $headerDiv.style.marginLeft = "10px";
-      hambergerCount--;
+      hambergerCount;
       isMenuOpen = false; // 메뉴 열림 상태 플래그 설정
     }
   });
@@ -237,34 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
       $fullpageNav.style.borderLeft = "1px solid white";
     }
   };
-
-  //nav메뉴 클릭시 그 하위 메뉴 나타남
-  const $navList = document.querySelectorAll(".nav_text");
-  const $navHidden = document.querySelectorAll(".nav_hiddenMeun");
-
-  $navList.forEach((nav, index) => {
-    nav.addEventListener("click", () => {
-      const hiddenMenu = $navHidden[index];
-
-      $navHidden.forEach((menu, menuIndex) => {
-        if (menuIndex !== index) {
-          menu.style.height = "0px";
-        }
-      });
-      if (hiddenMenu.style.height === "0px" || hiddenMenu.style.height === "") {
-        // 요소의 실제 높이 계산
-        hiddenMenu.style.height = "auto";
-        const height = hiddenMenu.scrollHeight + "px"; // auto상태에서 실제높이 계산
-        hiddenMenu.style.height = "0px"; // 0으로 초기화
-        void hiddenMenu.offsetHeight; // 강제로 reflow 발생
-        hiddenMenu.style.height = height; // 실제 높이로 설정
-      } else {
-        hiddenMenu.style.height = hiddenMenu.scrollHeight + "px"; //현재 높이를 정확히 설정
-        void hiddenMenu.offsetHeight; // 강제로 reflow 발생
-        hiddenMenu.style.height = "0px"; // 0으로 초기화
-      }
-    });
-  });
 
   // mainsliderImg slide
   let imgCurrentIndex = 0;

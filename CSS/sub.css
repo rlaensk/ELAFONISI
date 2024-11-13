@@ -328,7 +328,7 @@
 }
 #wrap #container .equipment .eqTab li .divactive {
   visibility: visible;
-  z-index: 300;
+  z-index: 100;
 }
 #wrap #container .equipment .eqTab li.active {
   color: #ffffff;
